@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Tableau-formulaire</title>
+    </head>
+<body>
+    <table>
+      <caption>Les légendes de l'automobile</caption>
+    <thead>
+      <tr>
+        <th>Marques</th>
+        <th>types</th>
+        <th>années</th>
+      </tr>
+      <tr>
+        <td>Nissan<br><iframe src="https://giphy.com/embed/Bv4yauVVDcp9WOXUFc" width="180" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+        <td>350Z Nismo</td>
+        <td>2007 à 2009</td>
+      </tr>
+      <tr>
+        <td>Audi<br><iframe src="https://giphy.com/embed/Yes4njomZncJi" width="180" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></td>
+        <td>Quattro</td>
+        <td>1980 à 1986</td>
+      </tr>
+      </thead>
+      <tfoot>
+        <tr>
+        <th>Marques</th>
+        <th>types</th>
+        <th>années</th>
+      </tr>
+        <tr>
+          <td>Lancia<br> <iframe src="https://giphy.com/embed/n3QnvuMemP9MQ" width="180" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+          <td>Delta Integrale</td>
+          <td>1988 à 1989</td>
+        </tr>
+        <tr>
+          <td>Mitsubishi<br><iframe src="https://giphy.com/embed/qx6QyAzRTQJTxCd1MX" width="180" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+          <td>Lancer WRC</td>
+          <td>2001 à 2005</td>
+        </tr>
+      </tfoot>
+    </table>
+<br>
+
+    <form method="get" action="">
+      <label for="fav car">Votre voiture favorite:</label>
+      <input type="text" name="fav car" id="fav car" placeholder="Ex. : 350Z Nismo" size="30" maxlength="20">
+    </form>
+
+<form method="get" action="">
+  <p>Selectioner les marques que vous préférés :<br>
+            <input type="checkbox" name="Lancia" id="Lancia" > <label for="frites">Lancia</label><br>
+            <input type="checkbox" name="Audi" id="Audi" > <label for="steak">Audi</label><br>
+            <input type="checkbox" name="Nissan" id="Nissan" > <label for="epinards">Nissan</label><br>
+            <input type="checkbox" name="Mitsubishi" id="Mitsubishi" > <label for="huitres">Mitsubishi</label>
+        </p>
+    </form>
+  
+<form method="get" action="">
+    <p>
+        Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br>
+        <input type="radio" name="age" value="moins15" id="moins15"> <label for="moins15">Moins de 15 ans</label><br>
+        <input type="radio" name="age" value="medium15-25" id="medium15-25"> <label for="medium15-25">15-25 ans</label><br>
+        <input type="radio" name="age" value="medium25-40" id="medium25-40"> <label for="medium25-40">25-40 ans</label><br>
+        <input type="radio" name="age" value="plus40" id="plus40"> <label for="plus40">Plus de 40 ans</label>
+    </p>
+</form>
+
+<form method="get" action="">
+    <p>
+        <label for="pays">Dans quel pays habitez-vous ?</label><br>
+        <select name="pays" id="pays">
+            <option value="espagne">Espagne</option>
+            <option value="royaume-uni">Royaume-Uni</option>
+            <option value="canada">Canada</option>
+            <option value="japon">Japon</option>
+            <option value="france" selected>France</option>
+        </select>
+    </p>
+</form>
+  
+  </body>
+</html>
